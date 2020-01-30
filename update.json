@@ -1,8 +1,8 @@
 { 
         "homepage": "https://www.curseforge.com/minecraft/mc-mods/teletubbies-mod/files", 
         "promos": {
-                "1.14.4-latest": "5.1.1",
-                "1.14.4-recommended": "5.1.1",
+                "1.14.4-latest": "5.2.0",
+                "1.14.4-recommended": "5.2.0",
                 
                 "1.12.2-latest": "4.0.0",
                 "1.12.2-recommended": "4.0.0",
@@ -28,7 +28,8 @@
                 "5.0.0": "Update to 1.14",
                 "5.0.1": "Add waterlogging for blocks",
                 "5.1.0": "Add Tubby Dome",
-                "5.1.1": "Fix bug"
+                "5.1.1": "Fix bug",
+                "5.2.0": "New Tutu and Tinky Winky's Bag inventory"
         },
         "1.12.2": {
                 "4.0.0": "Initial Version"
