@@ -1,6 +1,9 @@
 { 
         "homepage": "https://www.curseforge.com/minecraft/mc-mods/teletubbies-mod/files", 
         "promos": {
+                "1.15.2-latest": "6.0.0",
+                "1.15.2-recommended": "6.0.0",
+                
                 "1.14.4-latest": "5.2.1",
                 "1.14.4-recommended": "5.2.1",
                 
@@ -24,8 +27,11 @@
                 "1.9.4-latest": "2.0.0",
                 "1.9.4-recommended": "2.0.0"
         },
+        "1.15.2": {
+                "6.0.0": "Update to 1.15.2"
+        },
         "1.14.4": {
-                "5.0.0": "Update to 1.14",
+                "5.0.0": "Update to 1.14.4",
                 "5.0.1": "Add waterlogging for blocks",
                 "5.1.0": "Add Tubby Dome",
                 "5.1.1": "Fix bug",
