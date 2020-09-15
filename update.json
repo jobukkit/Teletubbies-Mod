@@ -1,6 +1,9 @@
 { 
         "homepage": "https://www.curseforge.com/minecraft/mc-mods/teletubbies-mod/files", 
         "promos": {
+                "1.16.3-latest": "7.1.0b0",
+                "1.16.3-recommended": "7.1.0b0",
+                
                 "1.16.1-latest": "7.0.0b1",
                 "1.16.1-recommended": "7.0.0b1",
                 
@@ -29,6 +32,9 @@
                 
                 "1.9.4-latest": "2.0.0",
                 "1.9.4-recommended": "2.0.0"
+        },
+        "1.16.3": {
+                "7.1.0b0": "Update to 1.16.3"
         },
         "1.16.1": {
                 "7.0.0a0": "Update to 1.16.1",
