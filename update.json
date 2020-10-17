@@ -7,11 +7,11 @@
                 "1.16.1-latest": "7.0.0b1",
                 "1.16.1-recommended": "7.0.0b1",
                 
-                "1.15.2-latest": "6.2.0",
-                "1.15.2-recommended": "6.2.0",
+                "1.15.2-latest": "6.3.0",
+                "1.15.2-recommended": "6.3.0",
                 
-                "1.14.4-latest": "5.4.0",
-                "1.14.4-recommended": "5.4.0",
+                "1.14.4-latest": "5.5.1",
+                "1.14.4-recommended": "5.5.1",
                 
                 "1.12.2-latest": "4.0.0",
                 "1.12.2-recommended": "4.0.0",
@@ -48,7 +48,8 @@
                 "6.0.1": "Fix food bug",
                 "6.0.2": "Reduce food saturation and bug fixes",
                 "6.1.0": "Add sun face",
-                "6.2.0": "Add config file"
+                "6.2.0": "Add config file",
+                "6.3.0": "Better Dome generation"
         },
         "1.14.4": {
                 "5.0.0": "Update to 1.14.4",
@@ -59,7 +60,9 @@
                 "5.2.1": "Fix Tutu equipment for mobs, increase Tinky Winky's Bag size, add loottable for Tinky Winky's Bag",
                 "5.2.2": "Fix food bug",
                 "5.3.0": "Add sun face",
-                "5.4.0": "Add config file"
+                "5.4.0": "Add config file",
+                "5.5.0": "Better Dome generation",
+                "5.5.1": "Fix Dome generation bug"
         },
         "1.12.2": {
                 "4.0.0": "Initial Version"
