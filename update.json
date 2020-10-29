@@ -1,8 +1,8 @@
 { 
         "homepage": "https://www.curseforge.com/minecraft/mc-mods/teletubbies-mod/files", 
         "promos": {
-                "1.16.3-latest": "7.3.0",
-                "1.16.3-recommended": "7.3.0",
+                "1.16.3-latest": "7.3.1",
+                "1.16.3-recommended": "7.3.1",
                 
                 "1.16.1-latest": "7.0.0b1",
                 "1.16.1-recommended": "7.0.0b1",
@@ -36,7 +36,8 @@
         "1.16.3": {
                 "7.1.0b0": "Update to 1.16.3",
                 "7.2.0b0": "Add Voice Trumpet generation",
-                "7.3.0": "Add Dome generation"
+                "7.3.0": "Add Dome generation",
+                "7.3.1": "Fix bug"
         },
         "1.16.1": {
                 "7.0.0a0": "Update to 1.16.1",
