@@ -1,14 +1,14 @@
 { 
         "homepage": "https://www.curseforge.com/minecraft/mc-mods/teletubbies-mod/files", 
         "promos": {
-                "1.16.3-latest": "7.3.2",
-                "1.16.3-recommended": "7.3.2",
+                "1.16.3-latest": "7.3.3",
+                "1.16.3-recommended": "7.3.3",
                 
                 "1.16.1-latest": "7.0.0b1",
                 "1.16.1-recommended": "7.0.0b1",
                 
-                "1.15.2-latest": "6.3.1",
-                "1.15.2-recommended": "6.3.1",
+                "1.15.2-latest": "6.3.2",
+                "1.15.2-recommended": "6.3.2",
                 
                 "1.14.4-latest": "5.5.2",
                 "1.14.4-recommended": "5.5.2",
@@ -38,7 +38,8 @@
                 "7.2.0b0": "Add Voice Trumpet generation",
                 "7.3.0": "Add Dome generation",
                 "7.3.1": "Fix bug",
-                "7.3.2": "Fix Bag bug"
+                "7.3.2": "Fix Bag bug",
+                "7.3.3": "Fix Bee bug"
         },
         "1.16.1": {
                 "7.0.0a0": "Update to 1.16.1",
@@ -52,7 +53,8 @@
                 "6.1.0": "Add sun face",
                 "6.2.0": "Add config file",
                 "6.3.0": "Better Dome generation",
-                "6.3.1": "Fix Bag bug"
+                "6.3.1": "Fix Bag bug",
+                "6.3.2": "Fix Bee bug"
         },
         "1.14.4": {
                 "5.0.0": "Update to 1.14.4",
