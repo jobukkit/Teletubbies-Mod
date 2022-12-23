@@ -10,10 +10,10 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
@@ -31,6 +31,7 @@ import teletubbies.block.ToastMachineBlock;
 import teletubbies.client.audio.SoundList;
 import teletubbies.inventory.container.ToastMachineContainer;
 import teletubbies.inventory.container.handler.ToastMachineItemHandler;
+import teletubbies.inventory.container.slot.SpecificItemSlot;
 import teletubbies.item.ItemList;
 import teletubbies.util.Converter;
 import teletubbies.util.RandomHelper;
@@ -61,7 +62,7 @@ public class ToastMachineTileEntity extends TileEntity implements ITickableTileE
 
 		if (!world.isRemote) {
 			if (this.isPowered()) {
-				if (handler.getStackInSlot(0).getItem().equals(Items.WHEAT)) {
+				if (ItemTags.getCollection().getOrCreate(SpecificItemSlot.GRAIN).contains(handler.getStackInSlot(0).getItem())) {
 					this.tickCounter++;
 					
 					if (tickCounter >= TICKS_PER_BAR) {

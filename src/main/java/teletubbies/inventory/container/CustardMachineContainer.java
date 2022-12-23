@@ -7,7 +7,6 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
@@ -15,7 +14,6 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import teletubbies.inventory.container.handler.CustardMachineItemHandler;
 import teletubbies.inventory.container.slot.CustardMachineOutputSlot;
 import teletubbies.inventory.container.slot.SpecificItemSlot;
-import teletubbies.item.ItemList;
 import teletubbies.tileentity.CustardMachineTileEntity;
 
 public class CustardMachineContainer extends Container {
@@ -44,12 +42,12 @@ public class CustardMachineContainer extends Container {
 	
 	private void addMachineSlots(CustardMachineItemHandler inputHandler, CustardMachineItemHandler outputHandler) {
 		for (int i = 0; i < 4; ++i) {
-			this.addSlot(new SpecificItemSlot(inputHandler, i, 8, 16 + i * 18, Items.MILK_BUCKET));
+			this.addSlot(new SpecificItemSlot(inputHandler, i, 8, 16 + i * 18, SpecificItemSlot.MILK));
 			this.addSlot(new CustardMachineOutputSlot(outputHandler, i, 152, 16 + i * 18));
 		}
-		this.addSlot(new SpecificItemSlot(inputHandler, 4, 32, 25, Items.SUGAR));
-		this.addSlot(new SpecificItemSlot(inputHandler, 5, 32, 43, Items.EGG));
-		this.addSlot(new SpecificItemSlot(inputHandler, 6, 32, 61, ItemList.BOWL));
+		this.addSlot(new SpecificItemSlot(inputHandler, 4, 32, 25, SpecificItemSlot.SUGAR));
+		this.addSlot(new SpecificItemSlot(inputHandler, 5, 32, 43, SpecificItemSlot.EGG));
+		this.addSlot(new SpecificItemSlot(inputHandler, 6, 32, 61, SpecificItemSlot.BOWL));
 		this.addSlot(new CustardMachineOutputSlot(outputHandler, 4, 128, 43));
 	}
 	

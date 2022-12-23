@@ -7,11 +7,13 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
@@ -29,6 +31,7 @@ import teletubbies.block.CustardMachineBlock;
 import teletubbies.client.audio.SoundList;
 import teletubbies.inventory.container.CustardMachineContainer;
 import teletubbies.inventory.container.handler.CustardMachineItemHandler;
+import teletubbies.inventory.container.slot.SpecificItemSlot;
 import teletubbies.item.ItemList;
 import teletubbies.util.Converter;
 
@@ -39,6 +42,7 @@ public class CustardMachineTileEntity extends TileEntity implements ITickableTil
 	private CustardMachineItemHandler outputHandler = new CustardMachineItemHandler(5);
 	private int processTime; // Counting down
 	private boolean isProcessing;
+	private boolean isHoldingBucket;
 	
 	public CustardMachineTileEntity() {
 		super(BlockList.CUSTARD_MACHINE_TILE);
@@ -65,7 +69,8 @@ public class CustardMachineTileEntity extends TileEntity implements ITickableTil
 							break;
 						}	
 					}
-					outputHandler.insertItem(4, new ItemStack(Items.BUCKET), false);
+					if (isHoldingBucket)
+						outputHandler.insertItem(4, new ItemStack(Items.BUCKET), false);
 					isProcessing = false;
 					setLightState();
 				}
@@ -74,7 +79,9 @@ public class CustardMachineTileEntity extends TileEntity implements ITickableTil
 			if (canMakeCustard() && !isProcessing) {
 				
 				for (int i = 0; i < 4; i++) {
-					if (inputHandler.getStackInSlot(i).getItem().equals(Items.MILK_BUCKET)) {
+					Item inputItem = inputHandler.getStackInSlot(i).getItem();
+					if (ItemTags.getCollection().getOrCreate(SpecificItemSlot.MILK).contains(inputItem)) {
+						isHoldingBucket = inputItem.equals(Items.MILK_BUCKET);
 						inputHandler.extractItem(i, 1, false);
 						break;
 					}	
@@ -117,9 +124,9 @@ public class CustardMachineTileEntity extends TileEntity implements ITickableTil
 	// returns true if the required items are available and the output slots are not filled, also consumes the imput items
 	public boolean canMakeCustard() {
 		for (int i = 0; i < 4; i++) {
-			if (inputHandler.getStackInSlot(i).getItem().equals(Items.MILK_BUCKET)) {
-				if (inputHandler.getStackInSlot(4).getItem().equals(Items.SUGAR)
-						&& inputHandler.getStackInSlot(5).getItem().equals(Items.EGG)
+			if (ItemTags.getCollection().getOrCreate(SpecificItemSlot.MILK).contains(inputHandler.getStackInSlot(i).getItem())) {
+				if (ItemTags.getCollection().getOrCreate(SpecificItemSlot.SUGAR).contains(inputHandler.getStackInSlot(4).getItem())
+						&& ItemTags.getCollection().getOrCreate(SpecificItemSlot.EGG).contains(inputHandler.getStackInSlot(5).getItem())
 						&& inputHandler.getStackInSlot(6).getItem().equals(ItemList.BOWL)) {
 
 					// All items available, check output

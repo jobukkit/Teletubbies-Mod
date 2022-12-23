@@ -7,7 +7,6 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -39,7 +38,7 @@ public class ToastMachineContainer extends Container {
 	}
 	
 	private void addMachineSlots(ToastMachineItemHandler handler) {
-		this.addSlot(new SpecificItemSlot(handler, 0, 61, 37, Items.WHEAT));
+		this.addSlot(new SpecificItemSlot(handler, 0, 61, 37, SpecificItemSlot.GRAIN));
 	}
 	
 	private void addPlayerSlots() {
