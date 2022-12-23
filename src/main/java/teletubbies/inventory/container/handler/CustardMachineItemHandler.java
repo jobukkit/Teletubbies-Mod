@@ -4,7 +4,9 @@ import javax.annotation.Nonnull;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.tags.ItemTags;
 import net.minecraftforge.items.ItemStackHandler;
+import teletubbies.inventory.container.slot.SpecificItemSlot;
 import teletubbies.item.ItemList;
 
 public class CustardMachineItemHandler extends ItemStackHandler {
@@ -21,11 +23,11 @@ public class CustardMachineItemHandler extends ItemStackHandler {
 	        case 1:
 	        case 2:
 	        case 3:
-	            return stack.getItem().equals(Items.MILK_BUCKET);
+	            return ItemTags.getCollection().getOrCreate(SpecificItemSlot.MILK).contains(stack.getItem());
 	        case 4:
-	            return stack.getItem().equals(Items.SUGAR);
+	            return ItemTags.getCollection().getOrCreate(SpecificItemSlot.SUGAR).contains(stack.getItem());
 	        case 5:
-	            return stack.getItem().equals(Items.EGG);
+	            return ItemTags.getCollection().getOrCreate(SpecificItemSlot.EGG).contains(stack.getItem());
 	        case 6:
 	            return stack.getItem().equals(ItemList.BOWL);
 	        }
