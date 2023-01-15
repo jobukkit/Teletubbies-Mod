@@ -12,6 +12,6 @@ public class ItemGroupTeletubbies extends ItemGroup {
 
 	@Override
 	public ItemStack createIcon() {
-		return new ItemStack(ItemList.PO_STICK);
+		return new ItemStack(ItemList.PO_ANTENNA);
 	}
 }

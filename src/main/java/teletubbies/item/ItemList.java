@@ -34,10 +34,10 @@ public class ItemList {
 	public static final Food TOAST_FOOD = (new Food.Builder()).hunger(Config.COMMON.TOAST_HUNGER.get()).saturation(Config.COMMON.TOAST_SATURATION.get().floatValue()).fastToEat().build();
 	
 	// Items
-	public static final Item TINKYWINKY_STICK = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "tinkywinky_stick");
-	public static final Item DIPSY_STICK = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "dipsy_stick");
-	public static final Item LAALAA_STICK = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "laalaa_stick");
-    public static final Item PO_STICK = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "po_stick");
+	public static final Item TINKYWINKY_ANTENNA = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "tinkywinky_antenna");
+	public static final Item DIPSY_ANTENNA = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "dipsy_antenna");
+	public static final Item LAALAA_ANTENNA = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "laalaa_antenna");
+    public static final Item PO_ANTENNA = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "po_antenna");
 	public static final Item TINKYWINKY_BAG = new TinkyWinkyBagItem();
 	public static final Item LAALAA_BALL = new LaaLaaBallItem();
 	public static final Item BOWL = new Item(new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(Teletubbies.MODID, "bowl");
@@ -85,7 +85,7 @@ public class ItemList {
 				FULL_GRASS = new BlockItem(BlockList.FULL_GRASS, new Item.Properties().group(Teletubbies.ITEMGROUP)).setRegistryName(BlockList.FULL_GRASS.getRegistryName()),
 				CONTROL_PANEL, VOICE_TRUMPET, TOAST_MACHINE, CUSTARD_MACHINE, WINDOW,
 				
-				TINKYWINKY_STICK, DIPSY_STICK, LAALAA_STICK, PO_STICK, TINKYWINKY_BAG, LAALAA_BALL,
+				TINKYWINKY_ANTENNA, DIPSY_ANTENNA, LAALAA_ANTENNA, PO_ANTENNA, TINKYWINKY_BAG, LAALAA_BALL,
 				BOWL, CUSTARD, TOAST,
 				
 				PO_SCOOTER,
