@@ -66,13 +66,19 @@ public abstract class TeletubbyEntity extends CreatureEntity {
 	
 	@Override
 	protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty) {
-		int i = this.rand.nextInt(10);
+		int i = this.rand.nextInt(15);
 		switch (i) {
 		case 0:
 			ItemStack stack = new ItemStack(ItemList.TUTU);
 			int damage = this.rand.nextInt(stack.getMaxDamage() - 5 + 1) + 5;
 			stack.setDamage(damage);
 			this.setItemStackToSlot(EquipmentSlotType.LEGS, stack);
+			break;
+		case 1:
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(ItemList.CUSTARD));
+			break;
+		case 2:
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(ItemList.TOAST));
 			break;
 		}
 	}
