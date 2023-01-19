@@ -27,6 +27,7 @@ import net.minecraft.world.IWorldReader;
 import net.minecraft.world.lighting.LightEngine;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.common.PlantType;
 import teletubbies.Teletubbies;
 
 public class FullGrassBlock extends GrassBlock {
@@ -54,10 +55,11 @@ public class FullGrassBlock extends GrassBlock {
 				plantable instanceof SaplingBlock ||
 				plantable instanceof SeaPickleBlock ||
 				plantable instanceof SweetBerryBushBlock ||
-				plantable instanceof TallGrassBlock) {
+				plantable instanceof TallGrassBlock)
 			return true;
-		}
-		return false;
+
+		PlantType type = plantable.getPlantType(world, pos.up());
+		return PlantType.Plains.equals(type);
 	}
 	
 	@Override

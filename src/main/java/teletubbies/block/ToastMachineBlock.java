@@ -62,6 +62,7 @@ public class ToastMachineBlock extends Block {
 	public ToastMachineBlock() {
 		super(Properties.create(Material.IRON)
 				.hardnessAndResistance(3.0f, 5.0f)
+				.harvestLevel(1)
 				.harvestTool(ToolType.PICKAXE));
 		
 		this.setRegistryName(Teletubbies.MODID, "toast_machine");

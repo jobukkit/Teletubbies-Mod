@@ -1,7 +1,7 @@
 {
     "teletubbies.custard_machine.message": "You need a Tubby Bowl in your hand",
 
-    "entity.teletubbies.teletubbies.tinkywinky": "Tinky Winky",
+    "entity.teletubbies.tinkywinky": "Tinky Winky",
     "entity.teletubbies.dipsy": "Dipsy",
     "entity.teletubbies.laalaa": "Laa-Laa",
     "entity.teletubbies.po": "Po",
@@ -18,6 +18,7 @@
     "entity.teletubbies.dipsy_zombie": "Zombie Dipsy",
     "entity.teletubbies.laalaa_zombie": "Zombie Laa-Laa",
     "entity.teletubbies.po_zombie": "Zombie Po",
+    "entity.teletubbies.po_scooter": "Po's Step",
 
     "itemGroup.teletubbies": "Teletubbies",
 

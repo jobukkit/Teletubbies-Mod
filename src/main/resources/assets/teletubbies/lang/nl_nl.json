@@ -1,7 +1,7 @@
 {
-    "teletubbies.custard_machine.message": "Je moet een Tubby Kom in je hand hebben",
+    "teletubbies.custard_machine.message": "Je moet een Tubby-Kom in je hand hebben",
 
-    "entity.teletubbies.teletubbies.tinkywinky": "Tinky Winky",
+    "entity.teletubbies.tinkywinky": "Tinky Winky",
     "entity.teletubbies.dipsy": "Dipsy",
     "entity.teletubbies.laalaa": "Laa-Laa",
     "entity.teletubbies.po": "Po",
@@ -18,6 +18,7 @@
     "entity.teletubbies.dipsy_zombie": "Zombie Dipsy",
     "entity.teletubbies.laalaa_zombie": "Zombie Laa-Laa",
     "entity.teletubbies.po_zombie": "Zombie Po",
+    "entity.teletubbies.po_scooter": "Po's Step",
 
     "itemGroup.teletubbies": "Teletubbies",
 
@@ -46,10 +47,10 @@
     "item.teletubbies.noonoo_eyes": "Noo-Noo's Ogen",
     "item.teletubbies.tinkywinky_bag": "Tinky Winky's Tas",
     "item.teletubbies.laalaa_ball": "Laa-Laa's Bal",
-    "item.teletubbies.custard": "Tubby Toetje",
-    "item.teletubbies.toast": "Tubby Toast",
-    "item.teletubbies.bowl": "Tubby Kom",
-    "item.teletubbies.tutu": "Tubby Tutu",
+    "item.teletubbies.custard": "Tubby-Toetje",
+    "item.teletubbies.toast": "Tubby-Toast",
+    "item.teletubbies.bowl": "Tubby-Kom",
+    "item.teletubbies.tutu": "Tubby-Tutu",
     "item.teletubbies.dipsy_hat": "Dipsy's Hoed",
     "item.teletubbies.tinkywinky_bib": "Tinky Winky's Slabbetje",
     "item.teletubbies.dipsy_bib": "Dipsy's Slabbetje",
@@ -59,10 +60,10 @@
     "item.teletubbies.po_scooter": "Po's Step",
 
     "block.teletubbies.full_grass": "Grasblok",
-    "block.teletubbies.control_panel": "Controle Paneel",
+    "block.teletubbies.control_panel": "Controlepaneel",
     "block.teletubbies.control_panel.text": "Leeg je tassen met hoppers",
-    "block.teletubbies.voice_trumpet": "Voice Trompet",
-    "block.teletubbies.toast_machine": "Tubby Toast Machine",
-    "block.teletubbies.custard_machine": "Tubby Toetje Machine",
+    "block.teletubbies.voice_trumpet": "Omroeptrompet",
+    "block.teletubbies.toast_machine": "Tubby-Toast Machine",
+    "block.teletubbies.custard_machine": "Tubby-Toetje Machine",
     "block.teletubbies.window": "Raam"
 }

@@ -28,6 +28,7 @@ public class ControlPanelBlock extends Block {
 	public ControlPanelBlock() {
 		super(Properties.create(Material.IRON)
 				.hardnessAndResistance(3.0f, 5.0f)
+				.harvestLevel(1)
 				.harvestTool(ToolType.PICKAXE));
 		
 		this.setRegistryName(Teletubbies.MODID, "control_panel");

@@ -76,6 +76,7 @@ public class CustardMachineBlock extends Block {
 	public CustardMachineBlock() {
 		super(Properties.create(Material.IRON)
 				.hardnessAndResistance(3.0f, 5.0f)
+				.harvestLevel(1)
 				.harvestTool(ToolType.PICKAXE));
 
 		this.setRegistryName(Teletubbies.MODID, "custard_machine");
